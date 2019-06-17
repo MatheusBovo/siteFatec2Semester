@@ -291,26 +291,37 @@ li.dot.active {
 	justify-content: space-between;
 }
 
-.destiny-box {
+.destiny-box-container-box {
 	width: 20%;
-	background-color: red;
-	height: 40vh;
+	background-color: black;
 	border: solid;
 	display: flex;
-	align-items: flex-end;
+	flex-direction: column;
+	align-items: flex-start;
 	border-radius: 10px;
 }
 
-.destiny-box p {
+.destiny-box-name {
 	color: white;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: black;
 	margin: 0;
 	height: 10vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-size: 20px;
+	border-radius: 0 0 10px 10px;
+	cursor: pointer;
+}
+
+.destiny-box {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 50vh;
+	display: flex;
+	border-radius: 10px 10px 0 0; 
 }
 
 /* -------- Golden Gate Bridge pic --------- */
@@ -322,6 +333,48 @@ li.dot.active {
 }
 
 .pic1:hover {
+	background-size: 120%;
+	transition: 2s;
+}
+
+/* -------- Hollywood pic --------- */
+
+.pic2 {
+	background-image: url(../Imagens/hollywood.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.pic2:hover {
+	background-size: 120%;
+	transition: 2s;
+}
+
+/* -------- Santa Monica's pic --------- */
+
+.pic3 {
+	background-image: url(../Imagens/santamonica.jpeg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.pic3:hover {
+	background-size: 120%;
+	transition: 2s;
+}
+
+/* -------- Yosemite pic --------- */
+
+.pic4 {
+	background-image: url(../Imagens/yosemite.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.pic4:hover {
 	background-size: 120%;
 	transition: 2s;
 }
