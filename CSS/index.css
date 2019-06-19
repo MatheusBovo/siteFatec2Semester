@@ -254,7 +254,6 @@ li.dot.active {
 	padding: 0;
 	display: flex;
 	justify-content: center;
-	background-color: orange;
 }
 
 .about-cali {
@@ -273,8 +272,14 @@ li.dot.active {
 	font-size: 18px;
 }
 
-/* --------------- Destinos ---------- */
+@media screen and (max-width: 768px) {
+	.about-cali p {
+		font-size: 15px;
+	}
+}
 
+/* --------------- Destinos ---------- */
+/*
 .container-destiny {
 	margin: 0;
 	padding: 0;
@@ -289,6 +294,7 @@ li.dot.active {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	background-color: blue;
 }
 
 .destiny-box-container-box {
@@ -299,6 +305,27 @@ li.dot.active {
 	flex-direction: column;
 	align-items: flex-start;
 	border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.destiny {
+		margin: 80px 30px;
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: blue;
+	}
+
+	.destiny-box-container-box {
+		width: 40%;
+		background-color: black;
+		border: solid;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		border-radius: 10px;
+	}
 }
 
 .destiny-box-name {
@@ -323,7 +350,7 @@ li.dot.active {
 	display: flex;
 	border-radius: 10px 10px 0 0; 
 }
-
+*/
 /* -------- Golden Gate Bridge pic --------- */
 .pic1 {
 	background-image: url(../Imagens/gol.jpg);
@@ -377,4 +404,89 @@ li.dot.active {
 .pic4:hover {
 	background-size: 120%;
 	transition: 2s;
+}
+
+/* ------------ Blocos de destino -------------*/
+
+.container-tinted {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.tinted {
+	width: 45%;
+	margin: 20px 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.destiny-box {
+	background-color: black;
+	width: 35%;
+	height: 50vh;
+	border: solid;
+	border-radius: 10px;
+	margin: 20px 38px;
+}
+
+.pictures {
+	width: 100%;
+	height: 40vh;
+	cursor: pointer;
+	border-radius: 10px 10px 0 0;
+}
+
+.destiny-name {
+	width: 100%;
+	height: 10vh;
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.destiny-name p {
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.container-tinted {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.tinted {
+		width: 80%;
+	}
+
+	.destiny-box {
+		margin: 10px 40px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.tinted {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.destiny-box {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.destiny-box {
+		width: 85%;
+	}
 }
